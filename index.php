@@ -3,22 +3,22 @@
     $header_menu = [
         [
             "title" => "Overview",
-            "link" => "https://policies.google.com/?hl=en-US",
+            "link" => "http://localhost/php-google-faq/",
         ],
 
         [
             "title" => "Privacy policy",
-            "link" => "https://policies.google.com/privacy?hl=en-US",
+            "link" => "http://localhost/php-google-faq/",
         ],
 
         [
             "title" => "Terms of service",
-            "link" => "https://policies.google.com/terms?hl=en-US",
+            "link" => "http://localhost/php-google-faq/",
         ],
 
         [
             "title" => "Technologies",
-            "link" => "https://policies.google.com/technologies?hl=en-US",
+            "link" => "http://localhost/php-google-faq/",
         ],
 
         [
@@ -83,7 +83,7 @@
                 <div class="col-12">
                     <div class="d-flex align-items-center px-4">
                         <img class="logo-size me-1" src="img/google-hd-logo.png" alt="logo google">
-                        <h2 class="text-capitalize text-secondary">Privacy & terms</h2>
+                        <h2 class="text-capitalize text-secondary mb-0">Privacy & terms</h2>
                     </div>
                 </div>
                 <div class="col-12 ul-container">
