@@ -1,10 +1,20 @@
-body {
-    font-family: "roboto";
+header {
+    font-family: 'PT Sans', sans-serif;
+}
+
+main {
+    font-family: sans-serif;
 }
 
 .logo-size {
     width: 100px;
 }
+
+header h4,h6 {
+    font-weight: 600;
+}
+
+
 header ul {
     height: 100%;
 }

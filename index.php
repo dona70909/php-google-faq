@@ -72,8 +72,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- logo -->
     <link rel="icon"  href="img/tab_logo.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
     <title> Google</title>
 </head> 
 <body>
@@ -83,7 +91,7 @@
                 <div class="col-12">
                     <div class="d-flex align-items-center px-4">
                         <img class="logo-size me-1" src="img/google-hd-logo.png" alt="logo google">
-                        <h2 class="text-capitalize text-secondary mb-0">Privacy & terms</h2>
+                        <h4 class="text-capitalize text-secondary mb-0">Privacy & terms</h4>
                     </div>
                 </div>
                 <div class="col-12 ul-container">
@@ -92,9 +100,9 @@
                             <li class="mx-4">
                                 <a class="text-decoration-none" href="<?php echo $menu_page["link"] ?>">
                                     <?php if($menu_page["title"] === "Faq") {?>
-                                        <h5 class="text-uppercase mb-0"><?php echo $menu_page["title"]?></h5>
+                                        <h6 class="text-uppercase mb-0"><?php echo $menu_page["title"]?></h6>
                                     <?php } else { ?>
-                                        <h5 class="text-capitalize mb-0"><?php echo $menu_page["title"]?></h5>
+                                        <h6 class="text-capitalize mb-0"><?php echo $menu_page["title"]?></h6>
                                     <?php } ?>          
                                 </a>
                             </li>
