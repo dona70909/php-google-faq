@@ -133,23 +133,27 @@
                     <ul class="list-unstyled p-0 m-0">
                         <?php foreach($google_faqs as $faq) {?>
                             <li class="container-faq">
-                                <h3 class="faq-question"> <?php echo $faq["question"]  ?> </h3>
-                                <p class="faq-answer">  <?php echo $faq["answer"]  ?></p>
+                                <h3 class="faq-question"> <?php echo $faq["question"] ?> </h3>
+                                <p class="faq-answer">  <?php echo $faq["answer"] ?> </p>
+
                                 <?php if( isset($faq["sub-answers"]) > 0) { ?>
-                                    <ol>
+                                    <ol class="sub-answers-list">
                                         <?php foreach($faq["sub-answers"] as $answer) {?>
-                                            <li>
-                                                <?php echo $answer["title"] ?>
-                                                <ol type="a">
+                                            <li class="sub-answers-item mb-5">
+                                                <h5 class="sub-answers-title"><?php echo $answer["title"] ?></h5>
+                                                <ol class="sub-text-list" type="a">
                                                     <?php if( isset($answer["text"])) { ?>
                                                         <?php foreach($answer["text"] as $text) {?>
-                                                            <li><?php echo $text ?></li>
+                                                            <li class="sub-text-item">
+                                                                <?php echo $text ?>
+                                                            </li>
                                                         <?php } ?> 
-                                                    <?php } ?>     
+                                                    <?php } ?>   
                                                 </ol>
                                             </li>
                                         <?php } ?>
                                     </ol>
+
                                 <?php } ?>    
                             </li>
                         <?php } ?>
