@@ -78,16 +78,17 @@
 <body>
     <header>
         <section class="container-fluid">
-            <div class="row pt-2 px-2">
-                <div class="col-12 d-flex align-items-center">
-                    <img class="logo-size me-1" src="img/google-hd-logo.png" alt="logo google">
-                    <h2 class="text-capitalize text-secondary">Privacy & terms</h2>
-                </div>
+            <div class="row pt-2">
                 <div class="col-12">
-                    <ul class="list-unstyled d-flex">
-
+                    <div class="d-flex align-items-center px-4">
+                        <img class="logo-size me-1" src="img/google-hd-logo.png" alt="logo google">
+                        <h2 class="text-capitalize text-secondary">Privacy & terms</h2>
+                    </div>
+                </div>
+                <div class="col-12 ul-container m-0">
+                    <ul class="list-unstyled p-0 d-flex">
                         <?php foreach($header_menu as $menu_page) { ?>
-                            <li class="mx-2">
+                            <li class="px-4">
                                 <a class="text-decoration-none" href="<?php echo $menu_page["link"] ?>">
                                     <?php if($menu_page["title"] === "Faq") {?>
                                         <h5 class="text-uppercase"><?php echo $menu_page["title"]?></h5>
@@ -101,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <hr>
+        
     </header>
 
     <main>
