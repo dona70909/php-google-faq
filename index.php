@@ -57,7 +57,9 @@
                 [
                     "title" => "The version of the terms that govern our relationship, which can vary depending on local laws",
                 ]
-            ]
+            ],
+
+            "answer-2" => "Keep in mind that Google services are essentially the same regardless of the affiliate that provides the services or your country association."
         ],
 
         [
@@ -145,7 +147,7 @@
                                                     <?php if( isset($answer["text"])) { ?>
                                                         <?php foreach($answer["text"] as $text) {?>
                                                             <li class="sub-text-item">
-                                                                <?php echo $text ?>
+                                                                <p><?php echo $text ?></p>
                                                             </li>
                                                         <?php } ?> 
                                                     <?php } ?>   
@@ -153,7 +155,10 @@
                                             </li>
                                         <?php } ?>
                                     </ol>
-
+                                <?php } ?>  
+                                
+                                <?php if(isset($faq["answer-2"])) { ?>
+                                    <p> <?php echo $faq["answer-2"];  ?></p>
                                 <?php } ?>    
                             </li>
                         <?php } ?>
