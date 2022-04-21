@@ -140,7 +140,7 @@
                                         <?php foreach($faq["sub-answers"] as $answer) {?>
                                             <li>
                                                 <?php echo $answer["title"] ?>
-                                                <ol>
+                                                <ol type="a">
                                                     <?php if( isset($answer["text"])) { ?>
                                                         <?php foreach($answer["text"] as $text) {?>
                                                             <li><?php echo $text ?></li>
