@@ -85,10 +85,10 @@
                         <h2 class="text-capitalize text-secondary">Privacy & terms</h2>
                     </div>
                 </div>
-                <div class="col-12 ul-container m-0">
+                <div class="col-12 ul-container">
                     <ul class="list-unstyled p-0 d-flex">
                         <?php foreach($header_menu as $menu_page) { ?>
-                            <li class="px-4">
+                            <li class="mx-4">
                                 <a class="text-decoration-none" href="<?php echo $menu_page["link"] ?>">
                                     <?php if($menu_page["title"] === "Faq") {?>
                                         <h5 class="text-uppercase"><?php echo $menu_page["title"]?></h5>
@@ -106,7 +106,7 @@
     </header>
 
     <main>
-        <section class="container-fluid">
+        <section class="container-fluid py-5">
             <div class="row justify-content-center">
                 <div class="col-8">
                     <ul class="list-unstyled p-0 m-0">
