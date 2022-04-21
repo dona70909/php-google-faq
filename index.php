@@ -89,7 +89,11 @@
                         <?php foreach($header_menu as $menu_page) { ?>
                             <li class="mx-2">
                                 <a class="text-decoration-none" href="<?php echo $menu_page["link"] ?>">
-                                    <h5> <?php echo $menu_page["title"] ?> </h5>
+                                    <?php if($menu_page["title"] === "Faq") {?>
+                                        <h5 class="text-uppercase"><?php echo $menu_page["title"]?></h5>
+                                    <?php } else { ?>
+                                        <h5 class="text-capitalize"><?php echo $menu_page["title"]?></h5>
+                                    <?php } ?>          
                                 </a>
                             </li>
                         <?php } ?>
