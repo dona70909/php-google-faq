@@ -64,9 +64,9 @@
                 <div class="col-8">
                     <ul class="list-unstyled p-0 m-0">
                         <?php foreach($google_faqs as $faq) {?>
-                            <li>
-                                <h3> <?php echo $faq["question"]  ?> </h3>
-                                <p>  <?php echo $faq["answer"]  ?></p>
+                            <li class="container-faq">
+                                <h3 class="faq-question"> <?php echo $faq["question"]  ?> </h3>
+                                <p class="faq-answer">  <?php echo $faq["answer"]  ?></p>
                             </li>
                         <?php } ?>
                     </ul>
